@@ -410,7 +410,7 @@ export class Task<T> {
         compressor: Packer.Compressor
     ): Packer.Encoder {
         if (compressor === Packer.Compressor.Identity) {
-            return Packer.Encoder.Plaintext;
+            return Packer.Encoder.Base64;
         }
 
         return Packer.Encoder.Base64;
